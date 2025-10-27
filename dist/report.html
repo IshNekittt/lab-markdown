@@ -1,15 +1,256 @@
-<!doctype html>
-<html lang="ru">
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-    <meta charset="utf-8">
-    <title>Отчёт</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
 </head>
-
 <body>
-    <h1>Отчёт (заглушка)</h1>
-    <p>Исходный файл: ../docs/report.md</p>
-    <p>Для генерации полноценного HTML используйте pandoc или другой генератор.</p>
+<h1 id="звіт-до-лабораторної-роботи-3-основи-markdown">Звіт до
+лабораторної роботи №3: Основи Markdown</h1>
+<p>Цей документ є звітом до лабораторної роботи №3. Метою роботи було
+ознайомлення з синтаксисом Markdown, створення структурованого
+документа, що містить списки, математичні формули, таблиці та діаграми.
+Також було розглянуто процес конвертації файлу у формати HTML, DOCX та
+PDF за допомогою утиліти Pandoc та публікація результатів на GitHub.</p>
+<h2 id="пять-улюблених-книг">П’ять улюблених книг</h2>
+<ol type="1">
+<li>Роберт Чалдині - “Психологія впливу”</li>
+<li>Деніел Канеман - “Мислення швидке й повільне”</li>
+<li>Кріс Восс - “Ніколи не йдіть на компроміс”</li>
+<li>Джеймс Клір - “Атомні звички”</li>
+<li>Дональд Кнут - “Мистецтво програмування”</li>
+</ol>
+<h2 id="математичні-формули">Математичні формули</h2>
+<p>Формула Ейлера <span class="math inline">\(e^{i\pi} + 1 = 0\)</span>
+є однією з найкрасивіших у математиці.</p>
+<p><strong>Рівняння для знаходження коренів квадратного
+рівняння:</strong></p>
+<p><span class="math display">\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</span></p>
+<p><strong>Рівняння еквівалентності маси та енергії:</strong></p>
+<p><span class="math display">\[
+E = mc^2
+\]</span></p>
+<h2 id="діаграма-процесу-роботи">Діаграма процесу роботи</h2>
+<p>Діаграма, що ілюструє процес виконання цієї лабораторної роботи:</p>
+<pre class="mermaid"><code>graph TD;
+    A[Початок роботи] --&gt; B(Створення звіту в Markdown);
+    B --&gt; C{Додавання всіх елементів?};
+    C -- Так --&gt; D(Конвертація за допомогою Pandoc);
+    D --&gt; E[Отримання HTML, DOCX, PDF];
+    E --&gt; F(Публікація на GitHub);
+    F --&gt; G[Кінець];
+    C -- Ні --&gt; B;</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Книга</th>
+<th style="text-align: left;">Автор</th>
+<th style="text-align: left;">Кількість сторінок</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Психологія впливу</td>
+<td style="text-align: left;">Роберт Чалдині</td>
+<td style="text-align: left;">528</td>
+</tr>
+<tr>
+<td style="text-align: left;">Мислення швидке й повільне</td>
+<td style="text-align: left;">Деніел Канеман</td>
+<td style="text-align: left;">480</td>
+</tr>
+<tr>
+<td style="text-align: left;">Атомні звички</td>
+<td style="text-align: left;">Джеймс Клір</td>
+<td style="text-align: left;">288</td>
+</tr>
+<tr>
+<td style="text-align: left;">Мистецтво програмування</td>
+<td style="text-align: left;">Дональд Кнут</td>
+<td style="text-align: left;">650</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ніколи не йдіть на компроміс</td>
+<td style="text-align: left;">Кріс Восс</td>
+<td style="text-align: left;">264</td>
+</tr>
+</tbody>
+</table>
+<p>Під час виконання роботи я ознайомився з основами синтаксису
+Markdown, який є простим та зручним для написання структурованих
+документів. Використання утиліти Pandoc дозволяє легко перетворювати
+один вихідний файл у безліч форматів. Зберігання документації у Markdown
+на GitHub є надзвичайно ефективним для ведення проєктів.</p>
 </body>
-
 </html>
