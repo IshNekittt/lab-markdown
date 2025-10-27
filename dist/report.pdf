@@ -1,0 +1,3 @@
+Заглушка для report.pdf.
+Сгенерируйте реальный PDF из docs/report.md, например:
+pandoc ../docs/report.md -o report.pdf
